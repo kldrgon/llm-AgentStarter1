@@ -22,6 +22,12 @@
 python -m pip install poetry
 ```
 
+使用如下命令创建poetry虚拟环境,并安装依赖。
+
+``` bash
+poetry install
+```
+
 下载完毕后使用命令，启动服务端。
 
 ``` bash
