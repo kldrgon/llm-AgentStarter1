@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "agent-example"
+version = "0.1.0"
+description = "这是llm组的agent简易示例，将实现简易的实体提取并绘制统计图。"
+authors = ["chenyibing <chenyibing@pami-ai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "^1.68.1"
+grpcio-tools = "^1.68.1"
+zhipuai = "^2.1.5.20230904"
+matplotlib = "^3.9.3"
+python-dotenv = "^1.0.1"
+jupyter = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# 添加清华镜像源
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
